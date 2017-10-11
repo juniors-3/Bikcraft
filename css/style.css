@@ -8,6 +8,10 @@ p{
     font-size: 14px;
     line-height: 20px;
 }
+.img{
+    display: block;
+}
+
 
 .btn {
     border: 3px solid #fec63e;
@@ -95,7 +99,7 @@ p{
     height: 380px;
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
-    margin-top: 96px;
+    margin-top: 92px;
     text-align: center;
     padding-top: 80px;
 }
@@ -206,11 +210,67 @@ p{
 }
 
 /*seleciona o ultimo item*/
-.portifolio_listas li:last-child{
+.portifolio_lista li:last-child{
     margin-top: 20px;
     
 }
 
 .portifolio .call p{
     color: #FFF;
+}
+
+/*qualidade*/
+
+.qualidade{
+    padding: 60px 0;
+}
+
+.qualidade:after{
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.png") no-repeat center;
+    position: absolute;
+    top: 200px;
+    right: 162px;
+    /*garantir que sempre esse elemento fique atras*/
+    z-index: -1;
+}
+
+.qualidade .centralizar{
+    margin: auto;
+    text-align: center;
+    
+}
+.qualidade img{
+    margin: 0 auto;
+}
+
+.qualidade_lista{
+    padding-top: 20px;
+}
+
+.qualidade_lista li{
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista li h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+   
+}
+
+.qualidade_lista li h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto;
 }
