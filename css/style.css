@@ -22,7 +22,7 @@ p{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .1em;
-    
+
 }
 
 .btn:hover{
@@ -69,8 +69,8 @@ p{
 
 .header_menu{
     text-align: right;
-    
-        
+
+
 }
 
 .header_menu ul li{
@@ -90,7 +90,7 @@ p{
 
 .header_menu ul li a:hover{
     color: #FFF; 
-        
+
 }
 
 /*Introdução*/
@@ -110,7 +110,7 @@ p{
     color: #FFF;
     font-weight: bold;
     text-transform: uppercase;
-    
+
 }
 
 .quote-externo{
@@ -118,7 +118,7 @@ p{
     margin: 0 auto;
     margin-bottom: 40px;
     color: white;
-    
+
 }
 
 .quote-externo p{
@@ -159,7 +159,7 @@ p{
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-top: 20px;
-   
+
 }
 
 .produtos_lista li h3:after{
@@ -184,8 +184,8 @@ p{
 .call{
     text-align: center;
     padding-top: 40px;
-/*    para visualizar se os objetos acima estao em float
-    background: #0000cc; */
+    /*    para visualizar se os objetos acima estao em float
+        background: #0000cc; */
     clear: both;
 }
 
@@ -212,7 +212,7 @@ p{
 /*seleciona o ultimo item*/
 .portifolio_lista li:last-child{
     margin-top: 20px;
-    
+
 }
 
 .portifolio .call p{
@@ -241,7 +241,7 @@ p{
 .qualidade .centralizar{
     margin: auto;
     text-align: center;
-    
+
 }
 .qualidade img{
     margin: 0 auto;
@@ -263,7 +263,7 @@ p{
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-top: 20px;
-   
+
 }
 
 .qualidade_lista li h3:after{
@@ -273,4 +273,77 @@ p{
     height: 3px;
     background: #000;
     margin: 6px auto;
+}
+
+/*quebra*/
+
+.quebra{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.quebra .quote-externo{
+    max-width: 400px;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    padding: 20px 0;
+}
+
+.footer h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.footer h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fec63e;
+    margin: 6px 0 10px 0; 
+}
+
+.footer_historia{
+    padding-right: 50px; 
+}
+
+.footter_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.footter_rede ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footter_rede ul li a{
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 10px;
+}
+
+.footter_rede ul li a:hover{
+    border-color: #FFF;
+}
+
+.copy{
+    width: 100%;
+    background: #fec63e;
+    padding: 20px 0;
 }
