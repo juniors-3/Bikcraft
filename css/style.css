@@ -8,8 +8,9 @@ p{
     font-size: 14px;
     line-height: 20px;
 }
-.img{
+img{
     display: block;
+    max-width: 100%;
 }
 
 
