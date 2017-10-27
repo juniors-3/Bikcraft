@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/produtos.css">
         <link rel="stylesheet" href="css/responsivo.css">
-        
+
         <script src="js/modernizr.custom.45655.js"></script>
     </head>
     <body>
@@ -140,55 +140,58 @@
 
             </div>
         </section>
-        
+
         <!--contato orçamento-->
-        
+
         <section class="orcamento">
             <div class="container">
                 <h2 class="subtitulo">Orçamento</h2>
-                <form id="form_orcamento">
-                    <div class="grid-8 form">
+                <form action="enviar.php" method="post" name="form" class="formphp grid-8 form">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome">
-                    
+                    <input id="nome" name="nome" type="text">
                     <label for="email">E-mail</label>
-                    <input type="text" id="email">
-                    
+                    <input id="email" name="email" type="text">
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone">
-                    
-                    <label for="espec">Especificações</label>
-                    <textarea id="espec"></textarea>
-                    
-                    <button type="submit" class="btn">Enviar</button>
-                    </div>
-                    <div class="orcamento_dados grid-8">
-                        <h3>Dados</h3>
-                        <span>55 21 93223 3232</span>
-                        <span class="dados_email">orcamento@bikcraft.com</span>
-                        
-                        <h3>Monte a sua Bikcraft</h3>
-                        <p>Escolha as especificações</p>
-                        <ul>
-                            <li> - Cores</li>
-                            <li> - Estilos</li>
-                            <li> - Medidas</li>
-                            <li> - Acessórios</li>
-                            <li> - E Outros</li>
-                        </ul>
-                    </div>    
-                                           
-                </form>
+                    <input id="telefone" name="telefone" type="text">
+
+                    <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                    <input type="text" class="nao-aparece" name="leaveblank">
+                    <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                    <input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+
+                    <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+                </form>   
+
+                <div class="orcamento_dados grid-8">
+                    <h3>Dados</h3>
+                    <span>55 21 93223 3232</span>
+                    <span class="dados_email">orcamento@bikcraft.com</span>
+
+                    <h3>Monte a sua Bikcraft</h3>
+                    <p>Escolha as especificações</p>
+                    <ul>
+                        <li> - Cores</li>
+                        <li> - Estilos</li>
+                        <li> - Medidas</li>
+                        <li> - Acessórios</li>
+                        <li> - E Outros</li>
+                    </ul>
+                </div>    
+
+
             </div>
         </section>
 
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         <!--frase footer-->
         <section class="quebra">
             <blockquote class="quote-externo container">
@@ -239,7 +242,7 @@
                 </div>
             </div>
         </footer>
-        
+
         <!--javascript-->
         <script src="js/libs/jquery-1.11.2.min.js"></script>
         <script src="js/plugins.js"></script>
