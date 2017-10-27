@@ -23,12 +23,13 @@ img{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .1em;
+    transition: all .5s ease;
 
 }
 
 .btn:hover{
     color: #FFF;
-    border: 3px solid #fec63e;
+    border: 3px solid #FFF;
 }
 
 .btn.btn-preto:hover{
@@ -267,7 +268,7 @@ img{
 }
 
 /*seleciona o ultimo item*/
-.portifolio_lista li:last-child{
+.portifolio_lista div:last-of-type{
     margin-top: 20px;
 
 }
@@ -395,6 +396,7 @@ img{
     border: 3px solid #fec63e;
     display: block;
     padding: 10px;
+    transition: all .5s ease;
 }
 
 .footter_rede ul li a:hover{
@@ -405,4 +407,52 @@ img{
     width: 100%;
     background: #fec63e;
     padding: 20px 0;
+}
+
+
+
+/*animacoes*/
+
+.js .introducao h1,.js .introducao blockquote,.js .introducao .btn,.js .animar,.js .animar-interno,.js .introducao-interna h1,.js .introducao-interna p{
+    opacity: 0;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
